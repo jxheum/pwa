@@ -1,0 +1,28 @@
+{
+    "name": "iOS Style PWA",
+    "description": "iOS Style PWA App",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "asset/icon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }, {
+            "src": "asset/icon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "display": "fullscreen",
+    "prefer_related_applications": false,
+    "background_color": "#ffffff",
+    "screenshots": [
+        {
+            "src": "asset/jiheum1280.png",
+            "sizes": "1280x720",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "theme_color": "#ffffff"
+}
