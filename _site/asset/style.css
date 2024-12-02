@@ -1,9 +1,8 @@
-@font-face {
-    font-family : 'Pretendard';
-    src : url(font.woff2)
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 * {
-    font-family: 'SF Pro','Pretendard', "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'San Francisco', 'SF Pro', "SF Pro Text", 'Pretendard Variable',"Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 body, html {width:100%;margin:0;}
 .title {text-align: center;line-height: 22px;font-size: 17px;margin-top: 11px;margin-bottom: 11px;font-weight:600;}
