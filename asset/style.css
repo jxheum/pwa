@@ -1,5 +1,5 @@
 * {
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 body, html {width:100%;margin:0;}
 .title {text-align: center;line-height: 22px;font-size: 17px;margin-top: 11px;margin-bottom: 11px;font-weight:600;}
