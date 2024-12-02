@@ -1,0 +1,33 @@
+<div class="bottombar">
+    <div class="bottommenus">
+        <div class="menuicons" style="color:#007aff;">
+            <span>􀎞</span><br>홈
+        </div>
+        <div class="menuicons">
+            <span>􀆪</span><br>웹
+        </div>
+        <div class="menuicons">
+            <span>􀎬</span><br>사파리
+        </div>
+        <div class="menuicons">
+            <span>􀈕</span><br>폴더
+        </div>
+        <div class="menuicons">
+            <span>􀅴</span><br>정보
+        </div>
+    </div>
+</div>
+<div style="height:83px;"></div>
+
+<script>
+    menubtns = document.querySelectorAll('.menuicons')
+    menubtns2 = document.querySelectorAll('.menuicons')
+    menubtns.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            menubtns2.forEach((link2) => {
+                link2.style.color = ''
+            })
+            link.style.color = '#007aff'
+        })
+    });
+</script>
