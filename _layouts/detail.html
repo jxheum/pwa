@@ -1,0 +1,54 @@
+<html>
+    <head>
+        {% include head.html %}
+        <style>
+            .card {width:100vw;margin:0px;border-radius: 0px;}
+            .title {margin-top: 15px;}
+            .shareicon {top:16px;}
+        </style>
+    </head>
+    <body data-barba="wrapper">
+        <div data-barba="container" data-barba-namespace="detail">
+        <div class="topbar" style="background:transparent;">
+            <a onclick="history.back()"><div class="backicon"><i class="bi bi-arrow-left-circle-fill"></i></div></a>
+            <div class="title">
+                jxheum.site
+            </div>
+        
+            <a onclick="share()"><div class="shareicon"><i class="bi bi-share-fill"></i></div></a>
+        </div>
+        <script>
+            function share() {
+                    shareData = {
+                        title: '{{ page.title }}',
+                        url: document.location.href
+                    }
+                    if (navigator.canShare(shareData)) {
+                        navigator.share(shareData);
+                    } else {
+                        copy_link()
+                    }
+                }
+        
+                function copy_link() {
+                    temp = document.createElement("textarea");
+                    document.body.appendChild(temp);
+                    const url = document.location.pathname; // /2024/10/09/test2/
+                    temp.value = 'https://jxheum.site' + url; // /2024/10/09/test2/
+                    temp.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(temp);
+                }
+        </script>
+            {{ content }}
+        <script src="/asset/script.js"></script>
+    </div>
+    <script>
+        function linkopen(link) {
+            window.open(link, '_blank');
+        }
+    </script>
+    
+    
+    </body>
+</html>

@@ -2,10 +2,21 @@
     <head>
         {% include head.html %}
     </head>
-    <body>
+    <body data-barba="wrapper">
+        <div data-barba="container" data-barba-namespace="home">
         {% include topbar.html %}
         <div style="height:95px;"></div>
-        {{ content }}
+        
+            {{ content }}
         {% include bottombar.html %}
+        <script src="/asset/script.js"></script>
+    </div>
+    <script>
+        function linkopen(link) {
+            window.open(link, '_blank');
+        }
+    </script>
+    
+    
     </body>
 </html>

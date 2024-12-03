@@ -1,54 +1,48 @@
 ---
 layout: default
 ---
-<a href="/detail/jxheum.site">
 <div class="card card1">
     <div class="vincard"></div>
     <div class="bottominfo">
-        <img src="asset/jiheum icon.png" height="60px">
-        <span class="apptitle">jxheum.site</span>
+        <img src="/asset/jiheum icon.png" height="60px">
+        <span class="apptitle">Web</span>
         <button class="openbtn" onclick="linkopen('https://jxheum.site')"><span class="btnicon"><i class="bi bi-browser-safari"></i></span>열기</button>
     </div>
 </div>
-</a>
-<a>
 <div class="card card2">
     <div class="vincard"></div>
     <div class="bottominfo">
-        <img src="asset/youngil_ms icon.png" height="60px">
-        <span class="apptitle">youngil_ms</span>
+        <img src="/asset/youngil_ms icon.png" height="60px">
+        <span class="apptitle">Web</span>
         <button class="openbtn" onclick="linkopen('https://jxheum.site/youngil_ms')"><span class="btnicon"><i class="bi bi-browser-safari"></i></span>열기</button>
     </div>
 </div>
-</a>
-<a>
 <div class="card card1" style="margin-top:10px;">
     <div class="vincard"></div>
     <div class="bottominfo">
-        <img src="asset/jiheum icon.png" height="60px">
-        <span class="apptitle">jxheum.site</span>
+        <img src="/asset/jiheum icon.png" height="60px">
+        <span class="apptitle">Web</span>
         <button class="openbtn" onclick="linkopen('https://jxheum.site')"><span class="btnicon"><i class="bi bi-browser-safari"></i></span>열기</button>
     </div>
 </div>
-</a>
-<a>
 <div class="card card2">
     <div class="vincard"></div>
     <div class="bottominfo">
-        <img src="asset/youngil_ms icon.png" height="60px">
-        <span class="apptitle">youngil_ms</span>
+        <img src="/asset/youngil_ms icon.png" height="60px">
+        <span class="apptitle">Web</span>
         <button class="openbtn" onclick="linkopen('https://jxheum.site/youngil_ms')"><span class="btnicon"><i class="bi bi-browser-safari"></i></span>열기</button>
     </div>
 </div>
-</a>
+
 <script>
-    cards = document.querySelectorAll('.card')
-    cards.forEach(link => {
-        link.addEventListener('click', (e) => {
-            link.style.transform = `translateY(-${link.getBoundingClientRect().top}px)`
-            link.style.margin = '0';
-            link.style.width = '100vw';
-            link.style.borderRadius = '0px'
-        })
-    });
+    function linkopen(link) {
+        window.open(link, '_blank');
+    }
+
+    window.addEventListener('DOMContentLoaded', (e) => {
+        document.querySelector('.menuicons:first-child').style.color = '';
+        document.querySelector('.menuicons:nth-child(2)').style.color = '#007aff';
+        console.log('hello')
+    })
 </script>
+
