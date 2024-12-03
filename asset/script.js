@@ -13,6 +13,9 @@ barba.init({
             },
             to: {
                 namespace: ['detail']
+            },
+            leave() {
+                console.log('fuck')
             }
         }
     ]
