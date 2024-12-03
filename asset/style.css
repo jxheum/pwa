@@ -14,7 +14,7 @@ body, html {width:100%;margin:0;}
 .searchbox {margin-top:1px;width:calc(100vw - 32px);margin-left:16px;background:rgba(120, 120, 128, 0.12);border-radius: 10px;height:36px;margin-bottom: 15px;}
 .searchicon, .searchinput {display:inline-block;}
 .searchicon {margin-top: 9px;margin-left: 8px;font-size:17px;line-height: 22px;color:#848488;float:left;margin-right:5px;}
-.searchinput {background:none;border:none;height:100%;margin:0px;width:calc(100% - 32.65px);color:black;}
+.searchinput {background:none;border:none;height:100%;margin:0px;width:calc(100% - 32.65px);color:black;font-size:17px;line-height: 22px;}
 .searchinput::placeholder {color:#848488;}
 .card {
     border-radius: 50px;
