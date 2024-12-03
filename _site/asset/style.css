@@ -7,7 +7,7 @@
 body, html {width:100%;margin:0;}
 .title {text-align: center;line-height: 22px;font-size: 17px;margin-top: 11px;margin-bottom: 11px;font-weight:600;}
 .topbar {width:100%;position:fixed;
-    background: rgba(255, 255, 255, 0.75);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), white);
     backdrop-filter: blur(10px);z-index: 99999;}
 .shareicon {position:fixed;top:11px;right:16px;font-size:17px;color:#007aff;
     cursor:pointer;}
@@ -99,4 +99,12 @@ button {
 }
 .menuicons span {
     font-size: 18px;
+}
+@media (prefers-color-scheme: dark) {
+    .topbar {background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), black);}
+    body, html {background:#000;color:white;}
+    .bottominfo {background:rgba(0, 0, 0, 0.4)}
+    .bottombar {
+        background: rgba(0, 0, 0, 0.75);
+    }
 }

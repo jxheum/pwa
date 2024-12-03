@@ -2,9 +2,33 @@
     <div class="title">
         Jiheum
     </div>
-    <div class="shareicon"><a href="javascript:navigator.share({title: 'Jiheum Apps', url: document.location.href})"><i class="bi bi-share-fill"></i></a></div>
+
+    <a onclick="share()"><div class="shareicon"><i class="bi bi-share-fill"></i></div></a>
     <div class="searchbox">
         <div class="searchicon"><i class="bi bi-search"></i></div>
         <input class="searchinput" placeholder="검색"></input>
     </div>
 </div>
+<script>
+    function share() {
+            shareData = {
+                title: '{{ page.title }}',
+                url: document.location.href
+            }
+            if (navigator.canShare(shareData)) {
+                navigator.share(shareData);
+            } else {
+                copy_link()
+            }
+        }
+
+        function copy_link() {
+            temp = document.createElement("textarea");
+            document.body.appendChild(temp);
+            const url = document.location.pathname; // /2024/10/09/test2/
+            temp.value = 'https://jxheum.site' + url; // /2024/10/09/test2/
+            temp.select();
+            document.execCommand("copy");
+            document.body.removeChild(temp);
+        }
+</script>
