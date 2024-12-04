@@ -9,7 +9,9 @@ barba.init({
     transitions: [
         {
             name: 'default-transition',
-            leave() {wait(0.6)},
+            leave() {
+
+            },
             enter() {
                 // create your amazing enter animation here
             }
@@ -27,3 +29,17 @@ barba.init({
         }
     ]
 });
+
+header = document.querySelector('.topbar')
+backicon = document.querySelector('.backicon')
+backiconin = backicon.innerHTML
+document.addEventListener('scroll', (e) => {
+    if (scrollY >= 10) {
+        header.style.background = ''
+        backicon.innerHTML = '<i class="bi bi-arrow-left-short"></i>'
+    }
+    else {
+        header.style.background = 'none'
+        backicon.innerHTML = backiconin
+    }
+})
